@@ -24,8 +24,8 @@ const Home = () => {
             </Container>
 
             <div>
-              <Button style={{ marginLeft: "38% ", backgroundColor: "#009097" }} className="w-25" onClick={() => setOpen(!open)} aria-controls="collapse-text" aria-expanded={open}>
-                Rekomendasi
+              <Button style={{ marginLeft: "45% ", backgroundColor: "#009097" }} className="w-35" onClick={() => setOpen(!open)} aria-controls="collapse-text" aria-expanded={open}>
+                <div className="fs-6"> Rekomendasi</div>
               </Button>
 
               <Collapse in={open}>
