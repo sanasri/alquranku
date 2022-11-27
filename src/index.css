@@ -1,0 +1,27 @@
+.suratArab{
+  text-align: end;
+}
+
+/* .myBg{
+  background-color: #FFFFFF;
+  background-size:cover;
+  background-repeat:repeat;
+   height:800px;
+   overflow-x: scroll;
+} */
+
+.card:hover{
+  box-shadow: grey 2px 2px 2px 2px;
+}
+
+
+.bluesoft{
+  background-color: red;
+}
+  
+
+
+
+
+
+
