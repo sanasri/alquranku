@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Collapse, Container } from "react-bootstrap";
+import { Button, Collapse, Container, Row } from "react-bootstrap";
 import DaftarSurah from "../surah";
 import DaftarRekomedasiSurah from "./DaftarRekomendasiSurah";
 import ScrollButton from "../componen/ScroolToTop";
@@ -24,9 +24,11 @@ const Home = () => {
             </Container>
 
             <div>
-              <Button style={{ marginLeft: "45% ", backgroundColor: "#009097" }} className="w-35" onClick={() => setOpen(!open)} aria-controls="collapse-text" aria-expanded={open}>
-                <div className="fs-6"> Rekomendasi</div>
-              </Button>
+              <Row className="mt-4 mx-auto  w-50 .bluesoft ">
+                <Button style={{ backgroundColor: "#009097" }} className="w-35 mx-auto" onClick={() => setOpen(!open)} aria-controls="collapse-text" aria-expanded={open}>
+                  <div className="fs-6"> Rekomendasi</div>
+                </Button>
+              </Row>
 
               <Collapse in={open}>
                 <div>
