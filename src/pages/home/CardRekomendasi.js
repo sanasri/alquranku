@@ -5,11 +5,9 @@ const CardRekomendasi = ({ name }) => {
   // const  = props;
 
   return (
-    <Container className=" mt-3 w-100 ">
-      <Card className="rounded ">
-        <div className="text-center  ">{name}</div>
-      </Card>
-    </Container>
+    <Card style={{ fontSize: "100%" }} className=" text-center mt-3  h-100    ">
+      <Card.Text className="w-100">{name}</Card.Text>
+    </Card>
   );
 };
 

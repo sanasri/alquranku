@@ -10,7 +10,7 @@ const Footer = () => (
           <p> Alquran adalah kitab suci dan bagian penting dalam hidup umat Islam. Bagi kaum muslimin, Alquran adalah hukum dan perintah, pedoman untuk berperilaku dan moral.</p>
         </div>
         <div className="col">
-          <div className="fs-2">Media Sosial</div>
+          <div className="fs-3">Media Sosial</div>
           <div className="w-100">
             <BsInstagram className="me-2" />
             Sanasri_

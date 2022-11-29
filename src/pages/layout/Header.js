@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar fixed="top" variant="dark" style={{ backgroundColor: "rgb(0,144,151)", color: "#fff" }} expand="lg">
+    <Navbar fixed="top" variant="dark" style={{ backgroundColor: "rgb(0,144,151)", color: "#fff", boxShadow: "white 2px 2px" }} expand="lg">
       <Container className="d-flex align-items-center">
         <Navbar.Brand href="/">
           <img alt="Logo" width="30" height="30" src={require("../../img/logo-alquran.png")} className="me-3" />
