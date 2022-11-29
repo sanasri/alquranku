@@ -41,7 +41,7 @@ const DaftarSurah = () => {
                     <div className="fs-6">
                       {surat.number_of_surah}.{surat.name}
                     </div>
-                    <div style={{ fontFamily: "_PDMS_Saleem_QuranFont" }} className="text-end fs-3">
+                    <div style={{ fontFamily: "Scheherazade New" }} className="text-end fs-3">
                       {surat.name_translations["ar"]}
                     </div>
                   </div>

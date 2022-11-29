@@ -2,6 +2,7 @@ import React from "react";
 import RouterApp from "./router";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "react-bootstrap";
 
 // Style
 import "./index.css";

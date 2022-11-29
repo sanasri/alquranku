@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
-import { Button } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
@@ -26,9 +26,11 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <Button className="mb-3" style={{ backgroundColor: "#009097", marginLeft: "50% " }}>
-      <FaArrowCircleUp onClick={scrollToTop} style={{ display: visible ? "inline" : "none" }} />
-    </Button>
+    <Row className="d-flex justify-content-center">
+      <Button onClick={scrollToTop} className="mb-3 w-25 " style={{ backgroundColor: "#009097" }}>
+        <FaArrowCircleUp style={{ display: visible ? "inline" : "none" }} />
+      </Button>
+    </Row>
   );
 };
 

@@ -8,7 +8,6 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 
 const DaftarAyat = () => {
   const [listAyat, setListAyat] = useState([]);
-  const navigate = useNavigate();
   let params = useParams();
 
   const getApi = async () => {
@@ -30,36 +29,20 @@ const DaftarAyat = () => {
 
   return (
     <div>
-      <Container fluid>
-        <Container className=" mt-5 p-5 g-2 ">
-          <Row>
-            <Col>
-              <Button
-                className=""
-                style={{ backgroundColor: "#009097" }}
-                onClick={() => {
-                  navigate(`/DaftarSurat`);
-                }}
-              >
-                <div className=" fs-6  ">
-                  <BsFillArrowLeftSquareFill className="me-3" />
-                </div>
-              </Button>
-            </Col>
-            <Col>
-              <div className="text-center w-100 rounded-pill mb-5 ml-5 p-3 text-light" style={{ backgroundColor: "#009097", marginLeft: "-50%" }}>
-                <div className="fs-4">QS.{listAyat.name}</div>
+      <Container style={{ marginTop: "5rem" }} className="   g-2 ">
+        <Row className="mt-5">
+          <div className="text-center w-75 rounded-pill mb-3  p-3 text-light mx-auto" style={{ backgroundColor: "#009097" }}>
+            <div className="fs-6">QS.{listAyat.name}</div>
 
-                <div>{translations.id}</div>
-                <div>{listAyat.number_of_ayah} ayat</div>
-              </div>
-            </Col>
-          </Row>
-          {listAyat.verses?.map((ayat) => {
-            return <CardAyat key={ayat.number} ayat={ayat} />;
-          })}
-        </Container>
+            <div>{translations.id}</div>
+            <div>{listAyat.number_of_ayah} ayat</div>
+          </div>
+        </Row>
+        {listAyat.verses?.map((ayat) => {
+          return <CardAyat key={ayat.number} ayat={ayat} />;
+        })}
       </Container>
+
       <ScrollButton />
     </div>
   );
